@@ -1,0 +1,1056 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+Info: Command: quartus_sh --flow compile ZXNext.qsf
+Info: Quartus(args): compile ZXNext.qsf
+Info: Project Name = Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/ZXNext
+Info: Revision Name = ZXNext
+{"object_type": "report_status", "percent" : 0}
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+Info: Command: quartus_sh -t sys/build_id.tcl compile ZXNext ZXNext
+Info: Quartus(args): compile ZXNext ZXNext
+Info: Evaluation of Tcl script sys/build_id.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+{"object_type": "report_status", "percent" : 16}
+{"object_type": "report_status", "percent" : 16}
+Info: *******************************************************************
+Info: Running Quartus Prime Signal Tap
+Info: Command: quartus_stp ZXNext -c ZXNext
+Info: Quartus Prime Signal Tap was successful. 0 errors, 0 warnings
+{"object_type": "report_status", "percent" : 33}
+{"object_type": "report_status", "percent" : 33}
+{"object_type": "report_status", "percent" : 34}
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+Info: Command: quartus_map --read_settings_files=off --write_settings_files=off ZXNext -c ZXNext
+Info: High Performance Effort optimization mode selected -- timing performance will be prioritized at the potential cost of increased compilation time
+{"object_type": "refresh_report"}
+Info: Parallel compilation is enabled and will use up to 6 processors
+Info: Found 1 design units, including 1 entities, in source file rtl/pll.v
+Info: Found 1 design units, including 1 entities, in source file rtl/pll/pll_0002.v
+Info: Found 1 design units, including 1 entities, in source file sys/pll_hdmi.v
+Info: Found 1 design units, including 1 entities, in source file sys/pll_hdmi/pll_hdmi_0002.v
+Info: Found 1 design units, including 1 entities, in source file sys/pll_cfg.v
+Info: Found 1 design units, including 1 entities, in source file sys/pll_cfg/altera_pll_reconfig_top.v
+Info: Verilog HDL Declaration information at altera_pll_reconfig_core.v(112): object "LOCKED" differs only in case from object "locked" in the same scope
+Info: Verilog HDL Declaration information at altera_pll_reconfig_core.v(1901): object "dps_done" differs only in case from object "DPS_DONE" in the same scope
+Info: Verilog HDL Declaration information at altera_pll_reconfig_core.v(1893): object "dps_changed" differs only in case from object "DPS_CHANGED" in the same scope
+Info: Found 6 design units, including 6 entities, in source file sys/pll_cfg/altera_pll_reconfig_core.v
+Warning: Entity "altera_std_synchronizer" obtained from "sys/pll_cfg/altera_std_synchronizer.v" instead of from Quartus Prime megafunction library
+Info: Found 1 design units, including 1 entities, in source file sys/pll_cfg/altera_std_synchronizer.v
+Info: Verilog HDL Declaration information at sys_top.v(203): object "sd_miso" differs only in case from object "SD_MISO" in the same scope
+Info: Verilog HDL Declaration information at sys_top.v(115): object "BTN_USER" differs only in case from object "btn_user" in the same scope
+Info: Verilog HDL Declaration information at sys_top.v(116): object "BTN_OSD" differs only in case from object "btn_osd" in the same scope
+Info: Verilog HDL Declaration information at sys_top.v(157): object "HDMI_TX_CLK" differs only in case from object "hdmi_tx_clk" in the same scope
+Info: Verilog HDL Declaration information at sys_top.v(90): object "AUDIO_L" differs only in case from object "audio_l" in the same scope
+Info: Verilog HDL Declaration information at sys_top.v(91): object "AUDIO_R" differs only in case from object "audio_r" in the same scope
+Info: Verilog HDL Declaration information at sys_top.v(112): object "LED_USER" differs only in case from object "led_user" in the same scope
+Info: Verilog HDL Declaration information at sys_top.v(114): object "LED_POWER" differs only in case from object "led_power" in the same scope
+Info: Found 4 design units, including 4 entities, in source file sys/sys_top.v
+Info: Found 2 design units, including 1 entities, in source file sys/ascal.vhd
+Info: Found 2 design units, including 1 entities, in source file sys/pll_hdmi_adj.vhd
+Info: Verilog HDL Declaration information at hq2x.sv(304): object "A" differs only in case from object "a" in the same scope
+Info: Verilog HDL Declaration information at hq2x.sv(305): object "B" differs only in case from object "b" in the same scope
+Info: Verilog HDL Declaration information at hq2x.sv(306): object "D" differs only in case from object "d" in the same scope
+Info: Verilog HDL Declaration information at hq2x.sv(303): object "E" differs only in case from object "e" in the same scope
+Info: Verilog HDL Declaration information at hq2x.sv(308): object "H" differs only in case from object "h" in the same scope
+Info: Verilog HDL Declaration information at hq2x.sv(307): object "F" differs only in case from object "f" in the same scope
+Info: Found 5 design units, including 5 entities, in source file sys/hq2x.sv
+Info: Verilog HDL Declaration information at scandoubler.v(29): object "hq2x" differs only in case from object "Hq2x" in the same scope
+Info: Found 1 design units, including 1 entities, in source file sys/scandoubler.v
+Info: Found 1 design units, including 1 entities, in source file sys/scanlines.v
+Info: Found 2 design units, including 2 entities, in source file sys/video_cleaner.sv
+Info: Found 2 design units, including 2 entities, in source file sys/gamma_corr.sv
+Warning: Verilog HDL or VHDL warning at sys/video_mixer.sv(22): MESSAGE_ON or MESSAGE_OFF directive cannot process the non-HDL message ID 12161.
+Info: Found 1 design units, including 1 entities, in source file sys/video_mixer.sv
+Info: Found 3 design units, including 3 entities, in source file sys/arcade_video.v
+Info: Found 1 design units, including 1 entities, in source file sys/osd.v
+Info: Found 1 design units, including 1 entities, in source file sys/vga_out.sv
+Info: Found 1 design units, including 1 entities, in source file sys/i2c.v
+Info: Found 1 design units, including 1 entities, in source file sys/alsa.sv
+Info: Found 1 design units, including 1 entities, in source file sys/i2s.v
+Info: Found 1 design units, including 1 entities, in source file sys/spdif.v
+Warning: Verilog HDL information at audio_out.v(38): always construct contains both blocking and non-blocking assignments
+Info: Found 2 design units, including 2 entities, in source file sys/audio_out.v
+Info: Found 2 design units, including 2 entities, in source file sys/ltc2308.sv
+Info: Found 1 design units, including 1 entities, in source file sys/sigma_delta_dac.v
+Info: Found 1 design units, including 1 entities, in source file sys/hdmi_config.sv
+Info: Found 1 design units, including 1 entities, in source file sys/mcp23009.sv
+Info: Found 1 design units, including 1 entities, in source file sys/ddr_svc.sv
+Info: Found 2 design units, including 2 entities, in source file sys/sysmem.sv
+Info: Found 2 design units, including 2 entities, in source file sys/sd_card.sv
+Info: Found 3 design units, including 3 entities, in source file sys/hps_io.v
+Info: Found 1 design units, including 1 entities, in source file sys/i2c_controller.v
+Info: Found 1 design units, including 1 entities, in source file sys/i2c_av_config.v
+Info: Verilog HDL Declaration information at ZXNext.sv(29): object "RESET" differs only in case from object "reset" in the same scope
+Info: Found 1 design units, including 1 entities, in source file zxnext.sv
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/ym2149.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/turbosound.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/soundrive.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/pwm.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/i2s_transmitter.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/i2s.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/dac.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/audio_mixer.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/i2s/i2s_transmit.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/i2s/i2s_slave.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/i2s/i2s_receive.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/audio/i2s/i2s_master.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/ram/dpram2.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/cpu/t80na.vhd
+Info: Found 2 design units, including 0 entities, in source file rtl/cpu/t80n_pack.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/cpu/t80n_mcode.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/cpu/t80n_alu.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/cpu/t80n.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/device/multiface.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/device/dma.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/device/divmmc.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/device/copper.vhd
+Info: Found 1 design units, including 1 entities, in source file rtl/input/ps2_mouse.v
+Info: Found 2 design units, including 1 entities, in source file rtl/input/membrane/membrane.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/input/membrane/emu_fnkeys.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/input/keyboard/ps2_keyb.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/input/keyboard/ps2_iobase.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/input/keyboard/keymaps.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/misc/synchronize.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/misc/debounce.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/misc/asymmetrical_debounce.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/video/vga/scan_convert.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/video/zxula_timing.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/video/zxula.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/video/tilemap.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/video/sprites.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/video/lores.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/video/layer2.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/serial/uart.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/serial/spi_master.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/serial/fifop.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/rom/bootrom.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/ram/tdpram.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/ram/spram.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/ram/sdpram.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/ram/dpram.vhd
+Info: Found 1 design units, including 1 entities, in source file rtl/ram/sram.v
+Info: Found 2 design units, including 1 entities, in source file rtl/ram/bufgmux1.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/zxnext.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/zxnext_mister.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/device/ctc_chan.vhd
+Info: Found 2 design units, including 1 entities, in source file rtl/device/ctc.vhd
+Info: Found 1 design units, including 1 entities, in source file rtl/misc/compressor.sv
+Info: Found 1 design units, including 1 entities, in source file rtl/ds1307/ds1307.v
+Info: Found 1 design units, including 1 entities, in source file rtl/ds1307/i2cslave.v
+Info: Found 1 design units, including 1 entities, in source file rtl/ds1307/registerinterface.v
+Info: Found 1 design units, including 1 entities, in source file rtl/ds1307/serialinterface.v
+{"object_type": "report_status", "percent" : 34}
+{"object_type": "report_status", "percent" : 35}
+Warning: Verilog HDL or VHDL warning at DS1307.v(121): conditional expression evaluates to a constant
+Warning: Verilog HDL or VHDL warning at DS1307.v(130): conditional expression evaluates to a constant
+{"object_type": "report_status", "percent" : 35}
+Info: Elaborating entity "sys_top" for the top level hierarchy
+Warning: Verilog HDL or VHDL warning at sys_top.v(158): object "HDMI_TX_DE" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at sys_top.v(159): object "HDMI_TX_D" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at sys_top.v(160): object "HDMI_TX_HS" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at sys_top.v(175): object "SD_SPI_CS" assigned a value but never read
+Warning: Verilog HDL warning at sys_top.v(176): object SD_SPI_MISO used but never assigned
+Warning: Verilog HDL or VHDL warning at sys_top.v(177): object "SD_SPI_CLK" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at sys_top.v(178): object "SD_SPI_MOSI" assigned a value but never read
+Warning: Net "HDMI_TX_INT" at sys_top.v(162) has no driver or initial value, using a default initial value '0'
+Warning: Net "SD_SPI_MISO" at sys_top.v(176) has no driver or initial value, using a default initial value '0'
+Info: Elaborating entity "mcp23009" for hierarchy "mcp23009:mcp23009"
+Info: Elaborating entity "i2c" for hierarchy "mcp23009:mcp23009|i2c:i2c"
+Info: Elaborating entity "sysmem_lite" for hierarchy "sysmem_lite:sysmem"
+Info: Elaborating entity "sysmem_HPS_fpga_interfaces" for hierarchy "sysmem_lite:sysmem|sysmem_HPS_fpga_interfaces:fpga_interfaces"
+Info: Elaborating entity "ddr_svc" for hierarchy "ddr_svc:ddr_svc"
+Info: Elaborating entity "ascal" for hierarchy "ascal:ascal"
+Info: Inferred 5 megafunctions from design logic
+Info: Elaborating entity "altsyncram" for hierarchy "ascal:ascal|altsyncram:i_mem[0].r[7]__1"
+Info: Elaborated megafunction instantiation "ascal:ascal|altsyncram:i_mem[0].r[7]__1"
+Info: Instantiated megafunction "ascal:ascal|altsyncram:i_mem[0].r[7]__1" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_89q1.tdf
+Info: Elaborating entity "altsyncram_89q1" for hierarchy "ascal:ascal|altsyncram:i_mem[0].r[7]__1|altsyncram_89q1:auto_generated"
+Info: Elaborating entity "altsyncram" for hierarchy "ascal:ascal|altsyncram:o_line0[0].r[7]__2"
+Info: Elaborated megafunction instantiation "ascal:ascal|altsyncram:o_line0[0].r[7]__2"
+Info: Instantiated megafunction "ascal:ascal|altsyncram:o_line0[0].r[7]__2" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_ccn1.tdf
+Info: Elaborating entity "altsyncram_ccn1" for hierarchy "ascal:ascal|altsyncram:o_line0[0].r[7]__2|altsyncram_ccn1:auto_generated"
+Info: Elaborating entity "pll_hdmi_adj" for hierarchy "pll_hdmi_adj:pll_hdmi_adj"
+Info: Elaborating entity "pll_hdmi" for hierarchy "pll_hdmi:pll_hdmi"
+Info: Elaborating entity "pll_hdmi_0002" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst"
+Info: Elaborating entity "altera_pll" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Warning: Output port "lvds_clk" at altera_pll.v(320) has no driver
+Warning: Output port "loaden" at altera_pll.v(321) has no driver
+Warning: Output port "extclk_out" at altera_pll.v(322) has no driver
+Info: Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Instantiated megafunction "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i" with the following parameter:
+Info: Elaborating entity "dps_extra_kick" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst"
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "dprio_init" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|dprio_init:dprio_init_inst"
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|dprio_init:dprio_init_inst", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "altera_pll_dps_lcell_comb" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_0"
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_0", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "altera_pll_dps_lcell_comb" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_1"
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_1", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "altera_pll_dps_lcell_comb" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_2"
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_2", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "altera_pll_dps_lcell_comb" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_3"
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_3", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "altera_pll_dps_lcell_comb" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_4"
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_4", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "altera_cyclonev_pll" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll"
+Warning: Output port "extclk" at altera_cyclonev_pll.v(632) has no driver
+Warning: Output port "clkout[0]" at altera_cyclonev_pll.v(637) has no driver
+Warning: Output port "loaden" at altera_cyclonev_pll.v(641) has no driver
+Warning: Output port "lvdsclk" at altera_cyclonev_pll.v(642) has no driver
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "altera_cyclonev_pll_base" for hierarchy "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0"
+Info: Elaborated megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0", which is child of megafunction instantiation "pll_hdmi:pll_hdmi|pll_hdmi_0002:pll_hdmi_inst|altera_pll:altera_pll_i"
+Info: Elaborating entity "pll_cfg" for hierarchy "pll_cfg:pll_cfg"
+Info: Elaborating entity "altera_pll_reconfig_top" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst"
+Info: Elaborating entity "altera_pll_reconfig_core" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0"
+Warning: Verilog HDL or VHDL warning at altera_pll_reconfig_core.v(208): object "dps_start_assert" assigned a value but never read
+Warning: Verilog HDL Case Statement warning at altera_pll_reconfig_core.v(1510): incomplete case statement has no default case item
+Warning: Verilog HDL Case Statement warning at altera_pll_reconfig_core.v(1526): incomplete case statement has no default case item
+Info: Elaborating entity "altera_std_synchronizer" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|altera_std_synchronizer:altera_std_synchronizer_inst"
+Info: Elaborating entity "dyn_phase_shift" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst"
+Info: Elaborating entity "generic_lcell_comb" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_0"
+Info: Elaborating entity "generic_lcell_comb" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_1"
+Info: Elaborating entity "generic_lcell_comb" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_2"
+Info: Elaborating entity "generic_lcell_comb" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_3"
+Info: Elaborating entity "generic_lcell_comb" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|dyn_phase_shift:dyn_phase_shift_inst|generic_lcell_comb:lcell_cnt_sel_4"
+Info: Elaborating entity "self_reset" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|self_reset:self_reset_inst"
+Info: Elaborating entity "dprio_mux" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|dprio_mux:dprio_mux_inst"
+Info: Elaborating entity "fpll_dprio_init" for hierarchy "pll_cfg:pll_cfg|altera_pll_reconfig_top:pll_cfg_inst|altera_pll_reconfig_core:NM28_reconfig.reconfig_core.altera_pll_reconfig_core_inst0|fpll_dprio_init:fpll_dprio_init_inst"
+Info: Elaborating entity "hdmi_config" for hierarchy "hdmi_config:hdmi_config"
+Info: Elaborating entity "i2c" for hierarchy "hdmi_config:hdmi_config|i2c:i2c_av"
+Info: Elaborating entity "scanlines" for hierarchy "scanlines:HDMI_scanlines"
+Info: Elaborating entity "osd" for hierarchy "osd:hdmi_osd"
+Info: Elaborating entity "csync" for hierarchy "csync:csync_hdmi"
+Info: Elaborating entity "altddio_out" for hierarchy "altddio_out:hdmiclk_ddr"
+Info: Elaborated megafunction instantiation "altddio_out:hdmiclk_ddr"
+Info: Instantiated megafunction "altddio_out:hdmiclk_ddr" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/ddio_out_b2j.tdf
+Info: Elaborating entity "ddio_out_b2j" for hierarchy "altddio_out:hdmiclk_ddr|ddio_out_b2j:auto_generated"
+Info: Elaborating entity "scanlines" for hierarchy "scanlines:VGA_scanlines"
+Info: Elaborating entity "vga_out" for hierarchy "vga_out:vga_out"
+Info: Elaborating entity "aud_mix_top" for hierarchy "aud_mix_top:audmix_l"
+Info: Elaborating entity "audio_out" for hierarchy "audio_out:audio_out"
+Info: Elaborating entity "i2s" for hierarchy "audio_out:audio_out|i2s:i2s"
+Info: Elaborating entity "spdif" for hierarchy "audio_out:audio_out|spdif:toslink"
+Info: Elaborating entity "sigma_delta_dac" for hierarchy "audio_out:audio_out|sigma_delta_dac:sd_l"
+Info: Elaborating entity "lpf_aud" for hierarchy "audio_out:audio_out|lpf_aud:lpf_l"
+Info: Elaborating entity "alsa" for hierarchy "alsa:alsa"
+Info: Elaborating entity "I2C_AV_Config" for hierarchy "I2C_AV_Config:audio_config"
+Info: Elaborating entity "I2C_Controller" for hierarchy "I2C_AV_Config:audio_config|I2C_Controller:u0"
+Info: Elaborating entity "sync_fix" for hierarchy "sync_fix:sync_v"
+Info: Elaborating entity "emu" for hierarchy "emu:emu"
+Info: Elaborating entity "hps_io" for hierarchy "emu:emu|hps_io:hps_io"
+Info: Verilog HDL Case Statement information at hps_io.v(381): all case item expressions in this case statement are onehot
+Info: Elaborating entity "video_calc" for hierarchy "emu:emu|hps_io:hps_io|video_calc:video_calc"
+Info: Elaborating entity "ps2_device" for hierarchy "emu:emu|hps_io:hps_io|ps2_device:keyboard"
+Info: Elaborating entity "pll" for hierarchy "emu:emu|pll:pll"
+Info: Elaborating entity "pll_0002" for hierarchy "emu:emu|pll:pll|pll_0002:pll_inst"
+Info: Elaborating entity "altera_pll" for hierarchy "emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i"
+Info: Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
+Info: Elaborated megafunction instantiation "emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i"
+Info: Instantiated megafunction "emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i" with the following parameter:
+Info: Elaborating entity "Mister_sRam" for hierarchy "emu:emu|Mister_sRam:sRam"
+Info: Elaborating entity "ZXNEXT_Mister" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister"
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(404): object "zxn_hdmi_audio" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(405): object "zxn_speaker_en" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(406): object "zxn_speaker_beep" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(407): object "zxn_tape_mic" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(409): object "zxn_audio_ear" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(410): object "zxn_audio_mic" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(415): object "zxn_audio_L" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(416): object "zxn_audio_R" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(430): object "blank_out" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(444): object "zxn_hdmi_reset" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(446): object "h_visible_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(447): object "hsync_start_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(448): object "hsync_end_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(449): object "hcnt_end_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(450): object "v_visible_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(451): object "vsync_start_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(452): object "vsync_end_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(453): object "vcnt_end_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(485): object "zxn_joy_io_mode_en" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(486): object "zxn_joy_io_mode_lr" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(487): object "zxn_joy_io_mode_pin_7" assigned a value but never read
+Warning: VHDL Signal Declaration warning at zxnext_Mister.vhd(495): used explicit default value for signal "zxn_ps2_mode" because signal was never assigned a value
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(518): object "membrane_function_keys" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(523): object "membrane_col" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(527): object "sd_cs1_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(532): object "flash_cs_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(533): object "flash_sclk_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(534): object "flash_mosi_o" assigned a value but never read
+Warning: VHDL Signal Declaration warning at zxnext_Mister.vhd(535): used implicit default value for signal "flash_miso_i" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(536): object "flash_wp_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(537): object "flash_hold_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(550): object "keyb_row_o" assigned a value but never read
+Warning: VHDL Signal Declaration warning at zxnext_Mister.vhd(558): used implicit default value for signal "zxn_i2c_scl_n_i" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(612): object "zxn_bus_nmi_debounce_disable" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(616): object "bus_clk35_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(617): object "bus_addr_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(621): object "bus_ramcs_i" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(624): object "bus_halt_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(625): object "bus_iorq_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(626): object "bus_m1_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(627): object "bus_mreq_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(628): object "bus_rd_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(629): object "bus_wr_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(630): object "bus_rfsh_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(632): object "bus_busack_n_o" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(659): object "zxn_flashboot" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(660): object "zxn_coreid" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at zxnext_Mister.vhd(691): object "extras_io" assigned a value but never read
+Info: Elaborating entity "synchronize" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|synchronize:ear_sync"
+Info: Elaborating entity "debounce" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|debounce:db_expbus_rst_noise"
+Info: Elaborating entity "debounce" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|debounce:db_expbus_rst"
+Info: Elaborating entity "BUFGMUX1" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|BUFGMUX1:BUFGMUX1_i0"
+Warning: VHDL Process Statement warning at BUFGMUX1.vhd(61): inferring latch(es) for signal or variable "q0", which holds its previous value in one or more paths through the process
+Warning: VHDL Process Statement warning at BUFGMUX1.vhd(68): inferring latch(es) for signal or variable "q1", which holds its previous value in one or more paths through the process
+Warning: VHDL Process Statement warning at BUFGMUX1.vhd(75): inferring latch(es) for signal or variable "q0_enable", which holds its previous value in one or more paths through the process
+Warning: VHDL Process Statement warning at BUFGMUX1.vhd(85): inferring latch(es) for signal or variable "q1_enable", which holds its previous value in one or more paths through the process
+Info: Inferred latch for "q1_enable" at BUFGMUX1.vhd(85)
+Info: Inferred latch for "q0_enable" at BUFGMUX1.vhd(75)
+Info: Inferred latch for "q1" at BUFGMUX1.vhd(68)
+Info: Inferred latch for "q0" at BUFGMUX1.vhd(61)
+Info: Elaborating entity "scan_convert" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|scan_convert:sc_mod"
+Info: Elaborating entity "dpram2" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|scan_convert:sc_mod|dpram2:u_run"
+Info: Elaborating entity "ps2_mouse" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_mouse:ps2_mouse_mod"
+Info: Elaborating entity "ps2_keyb" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod"
+Info: Elaborating entity "keymaps" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|keymaps:keymaps"
+Info: Elaborating entity "ps2_iobase" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|ps2_iobase:ps2_alt0"
+Info: Elaborating entity "emu_fnkeys" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|emu_fnkeys:emu_fnkeys_mod"
+Info: Elaborating entity "membrane" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|membrane:membrane_mod"
+Info: Elaborating entity "asymmetrical_debounce" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|asymmetrical_debounce:db_expbus_nmi"
+Info: Elaborating entity "zxnext" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext"
+Warning: Verilog HDL or VHDL warning at zxnext.vhd(1183): object "machine_type_128" assigned a value but never read
+Info: Elaborating entity "T80Na" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod"
+Info: Elaborating entity "T80N" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod|T80N:z80n"
+Warning: Verilog HDL or VHDL warning at t80n.vhd(283): object "reg_direct_add_L_c" assigned a value but never read
+Info: Elaborating entity "T80N_MCode" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod|T80N:z80n|T80N_MCode:mcode"
+Warning: VHDL Process Statement warning at t80n_mcode.vhd(216): inferring latch(es) for signal or variable "Z80N_data_o", which holds its previous value in one or more paths through the process
+Info: Inferred latch for "Z80N_data_o[0]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[1]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[2]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[3]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[4]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[5]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[6]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[7]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[8]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[9]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[10]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[11]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[12]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[13]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[14]" at t80n_mcode.vhd(216)
+Info: Inferred latch for "Z80N_data_o[15]" at t80n_mcode.vhd(216)
+Info: Elaborating entity "T80N_ALU" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod|T80N:z80n|T80N_ALU:alu"
+Info: Elaborating entity "z80dma" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|z80dma:dma_mod"
+Warning: Verilog HDL or VHDL warning at dma.vhd(85): object "R3_dma_en_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at dma.vhd(98): object "R5_ce_wait_s" assigned a value but never read
+Warning: Verilog HDL or VHDL warning at dma.vhd(130): object "read_count_s" assigned a value but never read
+Info: Elaborating entity "bootrom" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|bootrom:bootrom_mod"
+Info: Elaborating entity "spi_master" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|spi_master:spi_master_mod"
+Info: Elaborating entity "uart" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|uart:uart0_mod"
+Info: Elaborating entity "debounce" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|uart:uart0_mod|debounce:db"
+Info: Elaborating entity "fifop" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|fifop:fifop_uart0_rx"
+Info: Elaborating entity "tdpram" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|tdpram:uart_fifo_rx"
+Info: Elaborating entity "copper" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|copper:copper_mod"
+Info: Elaborating entity "dpram2" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:copper_inst_msb_ram"
+Info: Elaborating entity "ctc" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|ctc:ctc_mod"
+Info: Elaborating entity "ctc_chan" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|ctc:ctc_mod|ctc_chan:ctc0"
+Info: Elaborating entity "divmmc" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|divmmc:divmmc_mod"
+Info: Elaborating entity "layer2" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|layer2:layer2_mod"
+Info: Elaborating entity "lores" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|lores:lores_mod"
+Info: Elaborating entity "multiface" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|multiface:multiface_mod"
+Info: Elaborating entity "sprites" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod"
+Info: Elaborating entity "sdpram" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|sdpram:attr0"
+Info: Elaborating entity "spram" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|spram:linebuf0"
+Info: Elaborating entity "dpram" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|dpram:pattern"
+Info: Elaborating entity "tilemap" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|tilemap:tilemap_mod"
+Info: Elaborating entity "sdpram" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|tilemap:tilemap_mod|sdpram:tilemem"
+Info: Elaborating entity "zxula" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|zxula:ula_mod"
+Info: Elaborating entity "turbosound" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|turbosound:turbosound_mod"
+Info: Elaborating entity "YM2149" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|turbosound:turbosound_mod|YM2149:psg0"
+Info: Elaborating entity "soundrive" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|soundrive:soundrive_mod"
+Info: Elaborating entity "zx_i2s" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|zx_i2s:i2s_mod"
+Info: Elaborating entity "i2s_slave" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|zx_i2s:i2s_mod|i2s_slave:i2s_slave_mod"
+Info: Elaborating entity "i2s_receive" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|zx_i2s:i2s_mod|i2s_receive:i2s_receiver_mod"
+Info: Elaborating entity "i2s_transmit" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|zx_i2s:i2s_mod|i2s_transmit:i2s_transmit_mod"
+Info: Elaborating entity "audio_mixer" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|audio_mixer:audio_mixer_mod"
+Info: Elaborating entity "dpram2" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank5_ram"
+Info: Elaborating entity "dpram2" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank7_ram"
+Info: Elaborating entity "zxula_timing" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|zxula_timing:timing_mod"
+Info: Elaborating entity "dpram2" for hierarchy "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_utm"
+Info: Elaborating entity "video_mixer" for hierarchy "emu:emu|video_mixer:video_mixer"
+Info: Elaborating entity "gamma_corr" for hierarchy "emu:emu|video_mixer:video_mixer|gamma_corr:gamma"
+Info: Elaborating entity "scandoubler" for hierarchy "emu:emu|video_mixer:video_mixer|scandoubler:sd"
+Info: Elaborating entity "Hq2x" for hierarchy "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x"
+Info: Elaborating entity "DiffCheck" for hierarchy "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|DiffCheck:diffcheck0"
+Info: Elaborating entity "Blend" for hierarchy "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|Blend:blender"
+Info: Elaborating entity "hq2x_in" for hierarchy "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|hq2x_in:hq2x_in"
+Info: Elaborating entity "hq2x_buf" for hierarchy "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|hq2x_in:hq2x_in|hq2x_buf:buf0"
+Info: Elaborating entity "hq2x_buf" for hierarchy "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|hq2x_buf:hq2x_out"
+Info: Elaborating entity "sd_card" for hierarchy "emu:emu|sd_card:sd_card"
+Info: Elaborating entity "sdbuf" for hierarchy "emu:emu|sd_card:sd_card|sdbuf:buffer"
+Info: Elaborating entity "ltc2308_tape" for hierarchy "emu:emu|ltc2308_tape:ltc2308_tape"
+Info: Elaborating entity "ltc2308" for hierarchy "emu:emu|ltc2308_tape:ltc2308_tape|ltc2308:adc"
+Info: Elaborating entity "DS1307" for hierarchy "emu:emu|DS1307:RTCWrapper"
+Warning: Verilog HDL or VHDL warning at DS1307.v(95): object "a_reg" assigned a value but never read
+Info: Elaborating entity "i2cSlave" for hierarchy "emu:emu|DS1307:RTCWrapper|i2cSlave:u_i2cSlave"
+Info: Elaborating entity "registerInterface" for hierarchy "emu:emu|DS1307:RTCWrapper|i2cSlave:u_i2cSlave|registerInterface:u_registerInterface"
+Info: Elaborating entity "serialInterface" for hierarchy "emu:emu|DS1307:RTCWrapper|i2cSlave:u_i2cSlave|serialInterface:u_serialInterface"
+Info: Verilog HDL Case Statement information at serialInterface.v(250): all case item expressions in this case statement are onehot
+{"object_type": "report_status", "percent" : 39}
+Warning: Port "extclk" on the entity instantiation of "cyclonev_pll" is connected to a signal of width 1. The formal width of the signal in the module is 2.  The extra bits will be left dangling without any fan-out logic.
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 41}
+{"object_type": "report_status", "percent" : 40}
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[32]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[15]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[14]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[13]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[12]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[11]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[10]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[9]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[8]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[7]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[6]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[5]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[4]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[3]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[2]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[1]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Node "emu:emu|hps_io:hps_io|EXT_BUS[0]" is stuck at GND because node is in wire loop and does not have a source
+Warning: Synthesized away the following node(s):
+Info: Gated clocks are found and converted to use clock enables
+Warning: Clock multiplexers are found and protected
+Info: Timing-Driven Synthesis is running
+Warning: Inferred dual-clock RAM node "emu:emu|sd_card:sd_card|sdbuf:conf|ram_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "emu:emu|sd_card:sd_card|sdbuf:buffer|ram_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_l2s|ram_q_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_utm|ram_q_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank7_ram|ram_q_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank5_ram|ram_q_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|dpram:pattern|ram_q_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|sdpram:attr4|ram_q_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning: Inferred RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|sdpram:attr3|ram_q_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning: Inferred RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|sdpram:attr2|ram_q_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning: Inferred RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|sdpram:attr1|ram_q_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning: Inferred RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|sdpram:attr0|ram_q_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning: Inferred RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:copper_inst_lsb_ram|ram_q_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning: Inferred RAM node "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:copper_inst_msb_ram|ram_q_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Warning: Inferred dual-clock RAM node "ascal:ascal|o_dpram_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "ascal:ascal|o_h_poly_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Info: Found 9 instances of uninferred RAM logic
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+Info: Inferred 40 megafunctions from design logic
+Info: Inferred 2 megafunctions from design logic
+Info: Elaborated megafunction instantiation "ascal:ascal|altsyncram:pal_mem_rtl_0"
+Info: Instantiated megafunction "ascal:ascal|altsyncram:pal_mem_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_2aj1.tdf
+Info: Elaborated megafunction instantiation "ascal:ascal|altsyncram:o_dpram_rtl_0"
+Info: Instantiated megafunction "ascal:ascal|altsyncram:o_dpram_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_32k1.tdf
+Info: Elaborated megafunction instantiation "ascal:ascal|altsyncram:o_v_poly_rtl_0"
+Info: Instantiated megafunction "ascal:ascal|altsyncram:o_v_poly_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_pin1.tdf
+Info: Elaborated megafunction instantiation "ascal:ascal|altshift_taps:o_dcptv_rtl_0"
+Info: Instantiated megafunction "ascal:ascal|altshift_taps:o_dcptv_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/shift_taps_tuu.tdf
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_lr91.tdf
+Info: Found 1 design units, including 1 entities, in source file db/cntr_uhf.tdf
+Info: Elaborated megafunction instantiation "osd:hdmi_osd|altshift_taps:rdout2_rtl_0"
+Info: Instantiated megafunction "osd:hdmi_osd|altshift_taps:rdout2_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/shift_taps_uuu.tdf
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_jr91.tdf
+Info: Found 1 design units, including 1 entities, in source file db/cntr_ohf.tdf
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_a9c.tdf
+Info: Elaborated megafunction instantiation "ascal:ascal|altsyncram:i_dpram_rtl_0"
+Info: Instantiated megafunction "ascal:ascal|altsyncram:i_dpram_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_g9j1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_l2s|altsyncram:ram_q_rtl_1"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_l2s|altsyncram:ram_q_rtl_1" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_4fj1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_utm|altsyncram:ram_q_rtl_1"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_utm|altsyncram:ram_q_rtl_1" with the following parameter:
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank5_ram|altsyncram:ram_q_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank5_ram|altsyncram:ram_q_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_6dn1.tdf
+Info: Found 1 design units, including 1 entities, in source file db/decode_5la.tdf
+Info: Found 1 design units, including 1 entities, in source file db/mux_lfb.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank5_ram|altsyncram:ram_q_rtl_1"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank5_ram|altsyncram:ram_q_rtl_1" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_cgj1.tdf
+Info: Found 1 design units, including 1 entities, in source file db/decode_u0a.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|spram:linebuf1|altsyncram:ram_q_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|spram:linebuf1|altsyncram:ram_q_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_k3n1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|sdpram:attr4|altsyncram:ram_q_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|sprites:sprite_mod|sdpram:attr4|altsyncram:ram_q_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_sji1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:copper_inst_lsb_ram|altsyncram:ram_q_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:copper_inst_lsb_ram|altsyncram:ram_q_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_09n1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|keymaps:keymaps|altsyncram:ram_q_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|keymaps:keymaps|altsyncram:ram_q_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_mkr1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|altshift_taps:ula_en_1a_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|altshift_taps:ula_en_1a_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/shift_taps_puu.tdf
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_br91.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank7_ram|altsyncram:ram_q_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank7_ram|altsyncram:ram_q_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_0an1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank7_ram|altsyncram:ram_q_rtl_1"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:bank7_ram|altsyncram:ram_q_rtl_1" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_6dj1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|bootrom:bootrom_mod|altsyncram:Mux7_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|bootrom:bootrom_mod|altsyncram:Mux7_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_cs51.tdf
+Info: Elaborated megafunction instantiation "emu:emu|sd_card:sd_card|sdbuf:conf|altsyncram:ram_rtl_0"
+Info: Instantiated megafunction "emu:emu|sd_card:sd_card|sdbuf:conf|altsyncram:ram_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_o6j1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|sd_card:sd_card|sdbuf:buffer|altsyncram:ram_rtl_0"
+Info: Instantiated megafunction "emu:emu|sd_card:sd_card|sdbuf:buffer|altsyncram:ram_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_cdt1.tdf
+Info: Elaborated megafunction instantiation "osd:hdmi_osd|altsyncram:osd_buffer_rtl_0"
+Info: Instantiated megafunction "osd:hdmi_osd|altsyncram:osd_buffer_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_i6k1.tdf
+Info: Elaborated megafunction instantiation "scanlines:HDMI_scanlines|altshift_taps:dout1_rtl_0"
+Info: Instantiated megafunction "scanlines:HDMI_scanlines|altshift_taps:dout1_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/shift_taps_vuu.tdf
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_kr91.tdf
+Info: Found 1 design units, including 1 entities, in source file db/cntr_phf.tdf
+Info: Elaborated megafunction instantiation "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|hq2x_buf:hq2x_out|altsyncram:ram_rtl_0"
+Info: Instantiated megafunction "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|hq2x_buf:hq2x_out|altsyncram:ram_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_ean1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|hq2x_in:hq2x_in|hq2x_buf:buf1|altsyncram:ram_rtl_0"
+Info: Instantiated megafunction "emu:emu|video_mixer:video_mixer|scandoubler:sd|Hq2x:Hq2x|hq2x_in:hq2x_in|hq2x_buf:buf1|altsyncram:ram_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_u6n1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|video_mixer:video_mixer|gamma_corr:gamma|altsyncram:gamma_curve_rtl_0"
+Info: Instantiated megafunction "emu:emu|video_mixer:video_mixer|gamma_corr:gamma|altsyncram:gamma_curve_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_4ni1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|altshift_taps:rgb_vblank_n_3_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|altshift_taps:rgb_vblank_n_3_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/shift_taps_quu.tdf
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_cr91.tdf
+Info: Elaborated megafunction instantiation "osd:vga_osd|altsyncram:osd_buffer_rtl_0"
+Info: Instantiated megafunction "osd:vga_osd|altsyncram:osd_buffer_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_0nl1.tdf
+Info: Elaborated megafunction instantiation "ascal:ascal|altsyncram:o_h_poly_rtl_0"
+Info: Instantiated megafunction "ascal:ascal|altsyncram:o_h_poly_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_4sm1.tdf
+Info: Elaborated megafunction instantiation "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_l2s|altsyncram:ram_q_rtl_0"
+Info: Instantiated megafunction "emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|dpram2:palette_l2s|altsyncram:ram_q_rtl_0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_ubn1.tdf
+Info: Elaborated megafunction instantiation "lpm_divide:Div0"
+Info: Instantiated megafunction "lpm_divide:Div0" with the following parameter:
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_jbm.tdf
+Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_plh.tdf
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_ove.tdf
+Info: Elaborated megafunction instantiation "lpm_divide:Div1"
+Info: Instantiated megafunction "lpm_divide:Div1" with the following parameter:
+{"object_type": "report_status", "percent" : 39}
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 40}
+{"object_type": "report_status", "percent" : 40}
+Warning: 16 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+{"object_type": "report_status", "percent" : 42}
+{"object_type": "report_status", "percent" : 42}
+{"object_type": "report_status", "percent" : 43}
+{"object_type": "report_status", "percent" : 43}
+{"object_type": "report_status", "percent" : 43}
+{"object_type": "report_status", "percent" : 43}
+Warning: Synthesized away the following node(s):
+Info: Resynthesizing 0 WYSIWYG logic cells and I/Os using "speed" technology mapper which leaves 7 WYSIWYG logic cells and I/Os untouched
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 44}
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+Warning: The following nodes have both tri-state and non-tri-state drivers
+Warning: The following bidirectional pins have no drivers
+Warning: The following tri-state nodes are fed by constants
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+Info: One or more bidirectional pins are fed by always enabled tri-state buffers
+Info: One or more bidirectional pins are fed by always-enabled (GND-fed) open-drain buffers
+Warning: Always-enabled tri-state buffer(s) removed
+Warning: Reduced the following open-drain buffers that are fed by GND
+Warning: The following nodes have both tri-state and non-tri-state drivers
+Warning: The following bidirectional pins have no drivers
+Warning: The following bidirectional pins have no drivers
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 44}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 45}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+{"object_type": "report_status", "percent" : 46}
+Warning: TRI or OPNDRN buffers permanently enabled
+Warning: Output pins are stuck at VCC or GND
+{"object_type": "report_status", "percent" : 48}
+{"object_type": "report_status", "percent" : 48}
+Info: 642 registers lost all their fanouts during netlist optimizations.
+Info: Found the following redundant logic cells in design
+Info: Generated suppressed messages file Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/output_files/ZXNext.map.smsg
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.map.json_files/
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.flow.json_files/
+{"object_type": "report_status", "percent" : 49}
+{"object_type": "report_status", "percent" : 49}
+Info: Generating hard_block partition "hard_block:auto_generated_inst"
+Warning: RST port on the PLL is not properly connected on instance emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock.
+Warning: RST port on the PLL is not properly connected on instance emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[2].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock.
+Warning: RST port on the PLL is not properly connected on instance emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[3].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock.
+Warning: RST port on the PLL is not properly connected on instance emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[4].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock.
+Warning: RST port on the PLL is not properly connected on instance emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[1].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock.
+Warning: Design contains 1 input pin(s) that do not drive logic
+Info: Implemented 46408 device resources after synthesis - the final resource count might be different
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.map.json_files/
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.flow.json_files/
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 273 warnings
+{"object_type": "report_status", "percent" : 50}
+{"object_type": "refresh_report"}
+{"object_type": "report_status", "percent" : 50}
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off ZXNext -c ZXNext
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = ZXNext
+Info: Revision = ZXNext
+{"object_type": "report_status", "percent" : 50}
+{"object_type": "refresh_report"}
+Info: High Performance Effort optimization mode selected -- timing performance will be prioritized at the potential cost of increased compilation time
+Info: Parallel compilation is enabled and will use up to 6 processors
+Info: Selected device 5CSXFC6D6F31C6 for design "ZXNext"
+Info: Low junction temperature is 0 degrees C
+Info: High junction temperature is 85 degrees C
+Warning: RST port on the PLL is not properly connected on instance emu:emu|pll:pll|pll_0002:pll_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock.
+Info: Fitter is performing a Standard Fit compilation using maximum Fitter effort to optimize design performance
+{"object_type": "report_status", "percent" : 52}
+{"object_type": "report_status", "percent" : 52}
+Warning: Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Info: Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Info: Starting Fitter periphery placement operations
+Info: Promoted 10 clocks (7 global, 3 regional)
+Info: Automatically promoted 3 clocks (3 global)
+Info: Fitter periphery placement operations ending: elapsed time is 00:00:01
+{"object_type": "report_status", "percent" : 55}
+Warning: The Timing Analyzer is analyzing 28 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Info: Evaluating HDL-embedded SDC commands
+Info: Reading SDC File: 'sys/sys_top.sdc'
+Info: Deriving PLL clocks
+Info: Clock uncertainty is not calculated until you update the timing netlist.
+Info: Reading SDC File: 'ZXNext.sdc'
+Info: Clock uncertainty is not calculated until you update the timing netlist.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|ps2_iobase:ps2_alt0|sigtrigger was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|data_send_rdy_s was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[6] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod|T80N:z80n|IR[0] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[7] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|accel_i_q[18] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|CLK_3M5_CONT was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: I2C_AV_Config:audio_config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
+Info: The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+Info: Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info: Found 13 clocks
+Extra Info: Performing register packing on registers with non-logic cell location assignments
+Extra Info: Completed register packing on registers with non-logic cell location assignments
+Info: Starting register packing
+Extra Info: Started Fast Input/Output/OE register processing
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[3] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[2] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[1] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[0] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[12] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[12] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[11] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[11] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[10] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[10] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[4] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[4] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[5] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[5] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[9] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[9] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[8] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[8] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[13] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[13] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[7] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[7] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[6] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[6] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[3] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[2] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[1] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_addr_active[0] to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Can't pack node emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|sram_we_n_o to I/O pin
+Warning: Ignoring invalid fast I/O register assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Warning: Ignoring some wildcard destinations of fast I/O register assignments
+Extra Info: Finished Fast Input/Output/OE register processing
+Extra Info: Start inferring scan chains for DSP blocks
+Extra Info: Inferring scan chains for DSP blocks is complete
+Extra Info: Moving registers into I/O cells, DSP blocks, and RAM blocks to improve timing and density
+Extra Info: Finished moving registers into I/O cells, DSP blocks, and RAM blocks
+Info: Finished register packing
+Info: Starting physical synthesis optimizations for speed
+Info: Starting physical synthesis algorithm register retiming
+Info: Physical synthesis algorithm register retiming complete: estimated slack improvement of 0 ps
+Info: Starting physical synthesis algorithm combinational resynthesis using boolean division
+Info: Physical synthesis algorithm combinational resynthesis using boolean division complete: estimated slack improvement of 0 ps
+Info: Starting physical synthesis algorithm register retiming
+Info: Physical synthesis algorithm register retiming complete: estimated slack improvement of 0 ps
+Info: Starting physical synthesis algorithm combinational resynthesis using boolean division
+Info: Physical synthesis algorithm combinational resynthesis using boolean division complete: estimated slack improvement of 0 ps
+Info: Physical synthesis optimizations for speed complete: elapsed time is 00:00:42
+Info: Starting register packing
+Extra Info: Start inferring scan chains for DSP blocks
+Extra Info: Inferring scan chains for DSP blocks is complete
+Extra Info: Moving registers into I/O cells, DSP blocks, and RAM blocks to improve timing and density
+Extra Info: Finished moving registers into I/O cells, DSP blocks, and RAM blocks
+Info: Finished register packing
+{"object_type": "report_status", "percent" : 53}
+Info: Fitter preparation operations ending: elapsed time is 00:01:24
+{"object_type": "report_status", "percent" : 53}
+Info: Fitter placement preparation operations beginning
+{"object_type": "report_status", "percent" : 55}
+{"object_type": "report_status", "percent" : 53}
+{"object_type": "report_status", "percent" : 54}
+{"object_type": "report_status", "percent" : 56}
+Info: The Fitter is using Advanced Physical Optimization.
+{"object_type": "report_status", "percent" : 53}
+{"object_type": "report_status", "percent" : 53}
+{"object_type": "report_status", "percent" : 54}
+{"object_type": "report_status", "percent" : 54}
+{"object_type": "report_status", "percent" : 54}
+{"object_type": "report_status", "percent" : 54}
+{"object_type": "report_status", "percent" : 55}
+Info: Fitter placement preparation operations ending: elapsed time is 00:01:32
+Info: Fitter placement operations beginning
+{"object_type": "report_status", "percent" : 55}
+{"object_type": "report_status", "percent" : 55}
+{"object_type": "report_status", "percent" : 55}
+{"object_type": "report_status", "percent" : 55}
+{"object_type": "report_status", "percent" : 56}
+{"object_type": "report_status", "percent" : 56}
+{"object_type": "report_status", "percent" : 56}
+{"object_type": "report_status", "percent" : 56}
+{"object_type": "report_status", "percent" : 56}
+{"object_type": "report_status", "percent" : 57}
+{"object_type": "report_status", "percent" : 58}
+{"object_type": "report_status", "percent" : 58}
+{"object_type": "report_status", "percent" : 58}
+{"object_type": "report_status", "percent" : 58}
+{"object_type": "report_status", "percent" : 58}
+{"object_type": "report_status", "percent" : 59}
+{"object_type": "report_status", "percent" : 60}
+{"object_type": "report_status", "percent" : 61}
+{"object_type": "report_status", "percent" : 62}
+{"object_type": "report_status", "percent" : 59}
+{"object_type": "report_status", "percent" : 59}
+{"object_type": "report_status", "percent" : 60}
+{"object_type": "report_status", "percent" : 60}
+{"object_type": "report_status", "percent" : 60}
+{"object_type": "report_status", "percent" : 61}
+{"object_type": "report_status", "percent" : 61}
+{"object_type": "report_status", "percent" : 62}
+Info: Fitter placement was successful
+Info: Fitter placement operations ending: elapsed time is 00:01:57
+{"object_type": "report_status", "percent" : 55}
+Info: Fitter routing operations beginning
+{"object_type": "report_status", "percent" : 62}
+Info: 9e+03 ns of routing delay (approximately 5.1% of available device routing delay) has been added to meet hold timing. For more information, refer to the Estimated Delay Added for Hold Timing section in the Fitter report.
+Info: Router estimated average interconnect usage is 16% of the available device resources
+{"object_type": "report_status", "percent" : 62}
+{"object_type": "report_status", "percent" : 62}
+{"object_type": "report_status", "percent" : 62}
+{"object_type": "report_status", "percent" : 62}
+{"object_type": "report_status", "percent" : 63}
+{"object_type": "report_status", "percent" : 63}
+{"object_type": "report_status", "percent" : 63}
+{"object_type": "report_status", "percent" : 63}
+{"object_type": "report_status", "percent" : 63}
+Info: Fitter routing operations ending: elapsed time is 00:05:33
+Info: Total time spent on timing analysis during the Fitter is 224.39 seconds.
+{"object_type": "report_status", "percent" : 63}
+Info: Started post-fitting delay annotation
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "report_status", "percent" : 66}
+Info: Delay annotation completed successfully
+Info: Started post-fitting delay annotation
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 65}
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "report_status", "percent" : 66}
+Info: Delay annotation completed successfully
+{"object_type": "report_status", "percent" : 64}
+{"object_type": "report_status", "percent" : 66}
+Info: Fitter post-fit operations ending: elapsed time is 00:02:12
+Warning: Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
+Warning: Following 26 pins have no output enable or a GND or VCC output enable - later changes to this connectivity may change fitting results
+Info: Generated suppressed messages file Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/output_files/ZXNext.fit.smsg
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.fit.json_files/
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.flow.json_files/
+Info: Quartus Prime Fitter was successful. 0 errors, 91 warnings
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "refresh_report"}
+{"object_type": "report_status", "percent" : 66}
+{"object_type": "report_status", "percent" : 67}
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ZXNext -c ZXNext
+{"object_type": "refresh_report"}
+{"object_type": "report_status", "percent" : 68}
+{"object_type": "report_status", "percent" : 69}
+{"object_type": "report_status", "percent" : 72}
+{"object_type": "report_status", "percent" : 73}
+{"object_type": "report_status", "percent" : 75}
+{"object_type": "report_status", "percent" : 78}
+{"object_type": "report_status", "percent" : 80}
+Info: Assembler is generating device programming files
+{"object_type": "report_status", "percent" : 81}
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+{"object_type": "report_status", "percent" : 83}
+{"object_type": "refresh_report"}
+Info: Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+{"object_type": "report_status", "percent" : 83}
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+Info: Command: quartus_sta ZXNext -c ZXNext
+Info: qsta_default_script.tcl version: #1
+{"object_type": "report_status", "percent" : 84}
+Info: Parallel compilation is enabled and will use up to 6 processors
+Info: Low junction temperature is 0 degrees C
+Info: High junction temperature is 85 degrees C
+{"object_type": "report_status", "percent" : 87}
+Warning: The Timing Analyzer is analyzing 28 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Info: Evaluating HDL-embedded SDC commands
+Info: Reading SDC File: 'sys/sys_top.sdc'
+Info: Deriving PLL clocks
+Info: Clock uncertainty is not calculated until you update the timing netlist.
+Info: Reading SDC File: 'ZXNext.sdc'
+Info: Clock uncertainty is not calculated until you update the timing netlist.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|CLK_3M5_CONT was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|ps2_iobase:ps2_alt0|sigtrigger was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[6] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|data_send_rdy_s was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod|T80N:z80n|IR[0] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|accel_i_q[18] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[7] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: I2C_AV_Config:audio_config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
+Info: The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+Info: Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 85C Model
+Info: Worst-case setup slack is 1.075
+Critical Warning: Timing requirements not met
+Info: Worst-case hold slack is -1.212
+Info: Worst-case recovery slack is 4.220
+Info: Worst-case removal slack is 0.784
+Info: Worst-case minimum pulse width slack is 0.892
+Info: Report Metastability: Found 310 synchronizer chains.
+Info: Analyzing Slow 1100mV 0C Model
+Info: Started post-fitting delay annotation
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+Info: Delay annotation completed successfully
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|CLK_3M5_CONT was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|ps2_iobase:ps2_alt0|sigtrigger was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[6] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|data_send_rdy_s was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod|T80N:z80n|IR[0] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|accel_i_q[18] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[7] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: I2C_AV_Config:audio_config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
+Info: The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+Info: Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Worst-case setup slack is 1.083
+Critical Warning: Timing requirements not met
+Info: Worst-case hold slack is -1.157
+Info: Worst-case recovery slack is 4.310
+Info: Worst-case removal slack is 0.727
+Info: Worst-case minimum pulse width slack is 0.892
+Info: Report Metastability: Found 310 synchronizer chains.
+Info: Analyzing Fast 1100mV 85C Model
+Info: Started post-fitting delay annotation
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 92}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 93}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 94}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 95}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 96}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 97}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 98}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+{"object_type": "report_status", "percent" : 99}
+Info: Delay annotation completed successfully
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|CLK_3M5_CONT was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|ps2_iobase:ps2_alt0|sigtrigger was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[6] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|data_send_rdy_s was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod|T80N:z80n|IR[0] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|accel_i_q[18] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[7] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: I2C_AV_Config:audio_config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
+Info: The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+Info: Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Worst-case setup slack is 3.242
+Critical Warning: Timing requirements not met
+Info: Worst-case hold slack is -0.708
+Info: Worst-case recovery slack is 5.102
+Info: Worst-case removal slack is 0.428
+Info: Worst-case minimum pulse width slack is 0.892
+Info: Report Metastability: Found 310 synchronizer chains.
+Info: Analyzing Fast 1100mV 0C Model
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|CLK_3M5_CONT was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|ps2_iobase:ps2_alt0|sigtrigger was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[6] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|ps2_keyb:ps2_kbd_mod|data_send_rdy_s was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|zxnext:zxnext|T80Na:cpu_mod|T80N:z80n|IR[0] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|accel_i_q[18] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: emu:emu|ZXNEXT_Mister:ZXNEXT_Mister|clk_28_div[7] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: I2C_AV_Config:audio_config|mI2C_CTRL_CLK was determined to be a clock but was found without an associated clock assignment.
+Info: The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+Info: Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Worst-case setup slack is 3.575
+Critical Warning: Timing requirements not met
+Info: Worst-case hold slack is -0.684
+Info: Worst-case recovery slack is 5.277
+Info: Worst-case removal slack is 0.382
+Info: Worst-case minimum pulse width slack is 0.892
+Info: Report Metastability: Found 310 synchronizer chains.
+Info: Design is not fully constrained for setup requirements
+Info: Design is not fully constrained for hold requirements
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.sta.json_files/
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.flow.json_files/
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 37 warnings
+Info: Generated JSON formatted report files in Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/db/ZXNext.sta.json_files/
+{"object_type": "report_status", "percent" : 100}
+{"object_type": "refresh_report"}
+Info: Quartus Prime Full Compilation was successful. 0 errors, 401 warnings
+Info: Evaluation of Tcl script c:/intelfpga/20.1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 401 warnings

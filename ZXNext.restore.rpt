@@ -1,0 +1,190 @@
+Restore Archived Project report for ZXNext
+Mon Oct 24 02:47:40 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Mon Oct 24 02:47:40 2022 ;
+; Revision Name                   ; ZXNext                                ;
+; Top-level Entity Name           ; sys_top                               ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'Z:/home/noemi/FPGA/ZXnext_MiSTer_Arrow_SoCKit/dse/ZXnext/ZXnext_4/ZXNext.qar' into the 'dse/ZXnext/ZXnext_4' directory
+Info: Generated report 'ZXNext.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 441 megabytes
+    Info: Processing ended: Mon Oct 24 02:47:40 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------------------------------+
+; Files Restored                         ;
++----------------------------------------+
+; File Name                              ;
++----------------------------------------+
+; qar_info.json                          ;
+; ZXNext.dse                             ;
+; ZXNext.qpf                             ;
+; ZXNext.qsf                             ;
+; ZXNext.sdc                             ;
+; ZXNext.sv                              ;
+; assignment_defaults.qdf                ;
+; build_id.v                             ;
+; files.qip                              ;
+; jtag.cdf                               ;
+; rtl/audio/audio_mixer.vhd              ;
+; rtl/audio/dac.vhd                      ;
+; rtl/audio/i2s.vhd                      ;
+; rtl/audio/i2s/i2s_master.vhd           ;
+; rtl/audio/i2s/i2s_receive.vhd          ;
+; rtl/audio/i2s/i2s_slave.vhd            ;
+; rtl/audio/i2s/i2s_transmit.vhd         ;
+; rtl/audio/i2s_transmitter.vhd          ;
+; rtl/audio/pwm.vhd                      ;
+; rtl/audio/soundrive.vhd                ;
+; rtl/audio/turbosound.vhd               ;
+; rtl/audio/ym2149.vhd                   ;
+; rtl/cpu/t80n.vhd                       ;
+; rtl/cpu/t80n_alu.vhd                   ;
+; rtl/cpu/t80n_mcode.vhd                 ;
+; rtl/cpu/t80n_pack.vhd                  ;
+; rtl/cpu/t80na.vhd                      ;
+; rtl/device/copper.vhd                  ;
+; rtl/device/ctc.vhd                     ;
+; rtl/device/ctc_chan.vhd                ;
+; rtl/device/divmmc.vhd                  ;
+; rtl/device/dma.vhd                     ;
+; rtl/device/multiface.vhd               ;
+; rtl/ds1307/DS1307.v                    ;
+; rtl/ds1307/i2cSlave.v                  ;
+; rtl/ds1307/i2cslave_define.v           ;
+; rtl/ds1307/registerInterface.v         ;
+; rtl/ds1307/serialInterface.v           ;
+; rtl/ds1307/timescale.v                 ;
+; rtl/input/keyboard/keymaps.vhd         ;
+; rtl/input/keyboard/ps2_iobase.vhd      ;
+; rtl/input/keyboard/ps2_keyb.vhd        ;
+; rtl/input/membrane/emu_fnkeys.vhd      ;
+; rtl/input/membrane/membrane.vhd        ;
+; rtl/input/ps2_mouse.v                  ;
+; rtl/misc/asymmetrical_debounce.vhd     ;
+; rtl/misc/compressor.sv                 ;
+; rtl/misc/debounce.vhd                  ;
+; rtl/misc/synchronize.vhd               ;
+; rtl/pll.qip                            ;
+; rtl/pll.v                              ;
+; rtl/pll/pll_0002.qip                   ;
+; rtl/pll/pll_0002.v                     ;
+; rtl/ram/BUFGMUX1.vhd                   ;
+; rtl/ram/dpram.vhd                      ;
+; rtl/ram/dpram2.vhd                     ;
+; rtl/ram/sdpram.vhd                     ;
+; rtl/ram/spram.vhd                      ;
+; rtl/ram/sram.v                         ;
+; rtl/ram/tdpram.vhd                     ;
+; rtl/rom/bootrom.vhd                    ;
+; rtl/serial/fifop.vhd                   ;
+; rtl/serial/spi_master.vhd              ;
+; rtl/serial/uart.vhd                    ;
+; rtl/video/layer2.vhd                   ;
+; rtl/video/lores.vhd                    ;
+; rtl/video/sprites.vhd                  ;
+; rtl/video/tilemap.vhd                  ;
+; rtl/video/vga/scan_convert.vhd         ;
+; rtl/video/zxula.vhd                    ;
+; rtl/video/zxula_timing.vhd             ;
+; rtl/zxnext.vhd                         ;
+; rtl/zxnext_Mister.vhd                  ;
+; sys/I2C_AV_Config.v                    ;
+; sys/I2C_Controller.v                   ;
+; sys/alsa.sv                            ;
+; sys/arcade_video.v                     ;
+; sys/ascal.vhd                          ;
+; sys/audio_out.v                        ;
+; sys/build_id.tcl                       ;
+; sys/ddr_svc.sv                         ;
+; sys/gamma_corr.sv                      ;
+; sys/hdmi_config.sv                     ;
+; sys/hps_io.v                           ;
+; sys/hq2x.sv                            ;
+; sys/i2c.v                              ;
+; sys/i2s.v                              ;
+; sys/ltc2308.sv                         ;
+; sys/mcp23009.sv                        ;
+; sys/osd.v                              ;
+; sys/pll_cfg.qip                        ;
+; sys/pll_cfg.v                          ;
+; sys/pll_cfg/altera_pll_reconfig_core.v ;
+; sys/pll_cfg/altera_pll_reconfig_top.v  ;
+; sys/pll_cfg/altera_std_synchronizer.v  ;
+; sys/pll_hdmi.qip                       ;
+; sys/pll_hdmi.v                         ;
+; sys/pll_hdmi/pll_hdmi_0002.qip         ;
+; sys/pll_hdmi/pll_hdmi_0002.v           ;
+; sys/pll_hdmi_adj.vhd                   ;
+; sys/pll_q20.qip                        ;
+; sys/scandoubler.v                      ;
+; sys/scanlines.v                        ;
+; sys/sd_card.sv                         ;
+; sys/sigma_delta_dac.v                  ;
+; sys/spdif.v                            ;
+; sys/sys.qip                            ;
+; sys/sys.tcl                            ;
+; sys/sys_analog.tcl                     ;
+; sys/sys_dual_sdram.tcl                 ;
+; sys/sys_top.sdc                        ;
+; sys/sys_top.v                          ;
+; sys/sysmem.sv                          ;
+; sys/vga_out.sv                         ;
+; sys/video_cleaner.sv                   ;
+; sys/video_mixer.sv                     ;
++----------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
