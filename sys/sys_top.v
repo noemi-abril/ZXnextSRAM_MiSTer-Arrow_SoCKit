@@ -30,24 +30,24 @@ module sys_top
 	input         FPGA_CLK1_50,
 	input         FPGA_CLK2_50,
 	input         FPGA_CLK3_50,
-
+/*
 	//////////// HDMI //////////
-	//output        HDMI_I2C_SCL,
-	//inout         HDMI_I2C_SDA,
+	output        HDMI_I2C_SCL,
+	inout         HDMI_I2C_SDA,
 
-	//output        HDMI_MCLK,
-	//output        HDMI_SCLK,
-	//output        HDMI_LRCLK,
-	//output        HDMI_I2S,
+	output        HDMI_MCLK,
+	output        HDMI_SCLK,
+	output        HDMI_LRCLK,
+	output        HDMI_I2S,
 
-	//output        HDMI_TX_CLK,
-	//output        HDMI_TX_DE,
-	//output [23:0] HDMI_TX_D,
-	//output        HDMI_TX_HS,
-	//output        HDMI_TX_VS,
+	output        HDMI_TX_CLK,
+	output        HDMI_TX_DE,
+	output [23:0] HDMI_TX_D,
+	output        HDMI_TX_HS,
+	output        HDMI_TX_VS,
 	
-	//input         HDMI_TX_INT,
-
+	input         HDMI_TX_INT,
+*/
 	//////////// SDR ///////////
 	output [12:0] SDRAM_A,
 	inout  [15:0] SDRAM_DQ,
@@ -90,6 +90,7 @@ module sys_top
 	output		  AUDIO_L,
 	output		  AUDIO_R,
 	output		  AUDIO_SPDIF,
+
 	//SoCkit, DE10-standard, DE1-SoC implementation for on-board Audio CODEC
 	// Audio CODEC
 	inout wire    AUD_ADCLRCK,  // Audio CODEC ADC LR Clock
@@ -99,6 +100,7 @@ module sys_top
 	inout wire    AUD_BCLK,     // Audio CODEC Bit-Stream Clock
 	output wire   AUD_XCK,      // Audio CODEC Chip Clock
 	output wire   AUD_MUTE,		// Audio CODEC Mute (active low)
+
 	// I2C Audio CODEC
 	inout wire    AUD_I2C_SDAT,     // I2C Data
 	output wire   AUD_I2C_SCLK,     // I2C Clock
@@ -1147,7 +1149,6 @@ csync csync_vga(clk_vid, vga_hs_osd, vga_vs_osd, vga_cs_osd);
 	assign VGA_BLANK_N = VGA_HS && VGA_VS;  //VGA DAC additional required pin
 	assign VGA_SYNC_N = 0; 					//VGA DAC additional required pin
 	assign VGA_CLK = HDMI_TX_CLK; 			//has to define a clock to VGA DAC clock otherwise
-
 `endif
 
 reg video_sync = 0;
